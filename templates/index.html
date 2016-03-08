@@ -3,24 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <title>Before I Die</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/because.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/because.js') }}"></script>
   </head>
   <body>
   	<h1>Before I Die</h1>
   	<div id="form-container">
-	  	<form>
+	  	<form method="post" action=".">
 		  <p><em>I want to</em></p>
 		  <input type="text" name="dream" id="dream-text-field"><br>
+			 <input type="submit" value="Submit"><br>
 		</form>
 	</div>
 	<hr>
 	<table>
 		<tr>
-			<td>sing in front of 1 million people.</td>
-			<td>10d</td>
+			{% for dream in dream_list %}
+				<td>{{dream.content}}</td>
+				<td>{{dream.date}}</td>
+			{% endfor %}
 		</tr>
 	</table>
   </body>
