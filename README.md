@@ -1,6 +1,8 @@
 # beforeIdie
 command line first time:
+
 pip install flask
+
 pip install Flask-SQLAlchemy
 
 command line to run:
