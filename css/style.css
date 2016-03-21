@@ -1,0 +1,44 @@
+html{
+	background-color: black;
+	color:white;
+}
+h1{
+text-align: center;
+color:#22bbed;
+margin:0;
+margin-top: 40px;
+font-size:30pt;
+}
+#form-container{
+display: block;
+width: 100vw;
+margin:0 auto;
+text-align: center;
+margin-bottom: 20px;
+}
+#form-container p{
+	display: inline-block;
+	font-size: 18pt;
+	font-family: arial;
+}
+#form-container input{
+	background-color: black;
+	position: relative;
+	left:0;
+	line-height: 40pt;
+	color: white;
+	font-size: 18pt;
+	width:40vw;
+}
+#form-container input:focus{
+outline:none;
+}
+hr{
+width:70vw;
+}
+table{
+	width:50vw;
+	margin:0 auto;
+	font-family: arial;
+	margin-top: 20px;
+}
