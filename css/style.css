@@ -9,6 +9,12 @@ margin:0;
 margin-top: 40px;
 font-size:30pt;
 }
+td{
+	font-size: 14pt;
+}
+h5{
+	font-size: 14pt;
+}
 ul{
 	list-style: none;
 	text-align: center;
@@ -33,6 +39,7 @@ margin-bottom: 20px;
 	color: white;
 	font-size: 18pt;
 	width:40vw;
+	border: none;
 }
 #form-container input:focus{
 outline:none;
