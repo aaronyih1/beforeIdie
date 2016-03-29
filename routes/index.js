@@ -19,7 +19,7 @@ var Dream = mongoose.model('Dream', dreamSchema);
 
 /* GET home page. */
 router.get('/', function(req, res) {
-    Dream.find(function(err,dreams){
+    Dream.find({}, null, {sort: {points: -1}}, function(err,dreams){
         res.render('index', { "dreamList": dreams });
     });
 });
